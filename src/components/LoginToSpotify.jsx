@@ -6,7 +6,9 @@ import { getUserProfile } from './SpotifyAPI';
 const spotifyApi = new SpotifyWebApi();
 
 const clientID = import.meta.env.VITE_SPOTIFY_CLIENT_ID; // Update with VITE_ prefix
-const redirectUri = 'http://localhost:3000/callback'; // Replace with your redirect URI
+const redirectUri = window.location.hostname === 'localhost'
+  ? 'http://localhost:3000/callback'
+  : 'https://psyxtify.vercel.app/callback'; // Use appropriate URI based on the environment
 
 const SpotifyLoginButton = () => {
   useEffect(() => {
