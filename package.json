@@ -1,0 +1,45 @@
+{
+  "name": "psyx",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.19",
+    "autoprefixer": "^10.4.19",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "colorthief": "^2.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "html-to-image": "^1.11.11",
+    "node-vibrant": "^3.2.1-alpha.1",
+    "postcss": "^8.4.39",
+    "query-string": "^9.0.0",
+    "querystring": "^0.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-loading-skeleton": "^3.4.0",
+    "react-router-dom": "^6.24.1",
+    "spotify-web-api-js": "^1.5.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "daisyui": "^4.12.10",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.1"
+  }
+}
