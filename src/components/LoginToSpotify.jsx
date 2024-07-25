@@ -5,7 +5,8 @@ import { getUserProfile } from './SpotifyAPI';
 
 const spotifyApi = new SpotifyWebApi();
 
-const clientID = import.meta.env.VITE_SPOTIFY_CLIENT_ID; // Update with VITE_ prefix
+// Directly include the client ID
+const clientID = 'd8e9ae3317574303af5a318bc1c05c07'; 
 const redirectUri = window.location.hostname === 'localhost'
   ? 'http://localhost:3000/callback'
   : 'https://psyxtify.vercel.app/callback'; // Use appropriate URI based on the environment
