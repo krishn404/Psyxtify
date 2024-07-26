@@ -11,8 +11,12 @@ const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log("Tracking page view for:", location.pathname + location.search);  // Add this line
-    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
+    const page = location.pathname + location.search;
+    console.log("Tracking page view for:", page);  // Log the page being tracked
+
+    // Send pageview to both tracking IDs
+    ReactGA.send({ hitType: 'pageview', page, trackerNames: ['tracker1'] });
+    ReactGA.send({ hitType: 'pageview', page, trackerNames: ['tracker2'] });
   }, [location]);
 
   return (
